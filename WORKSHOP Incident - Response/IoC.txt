@@ -1,0 +1,32 @@
+#################
+#
+# Indicator of Compromise (IoC) - Workshop Xử lý & Ứng cứu sự cố  tấn công mã hóa dữ liệu trên hệ thống CNTT
+# Organizer: CLB Bảo mật F-SEC -Đại học FPT Cần Thơ
+##################
+#
+
+[1] NETWORK INDICATORS (Mạng)
+- IP của kẻ tấn công: 192.168.6.20
+- Target Ports: 443, 135, 80, 22, 1521, 445, 139, 8000, 8300, 9080, 10001, 10002
+
+[2] HOST-BASED INDICATORS (File & Đường dẫn)
+- Ransomware Executable: LB3.exe
+- File path: 
+    + C:\Users\sysad\Desktop\LB3\LB3.exe 
+    + C:\Users\Public\LB3\LB3.exe
+- Encrypted File Extension: .btJNjXnpj
+- Ransom Note: btJNjXnpj.README.txt
+
+[3] PERSISTENCE & TOOLS
+
+
+[4] CRYPTO & IDENTIFIERS (Định danh)
+Trích xuất từ nội dung file Ransom Note (btJNjXnpj.README.txt) được tìm thấy trên hệ thống bị mã hóa:
+- Decryption ID: B7568014A48684D6D525F3F3722638C4
+- Tox ID: 3085B89A0C515D2FB124D645906F5D3DA5CB97CEBEA975959AE4F95302A04E1D709C3C4AE9B7
+
+[5] COMPROMISED HOSTNAMES (Nạn nhân)
+- VEEAM Server: WIN-4L207IP3NA9
+- ESXi Host: esxi.dfcorp.local
+- Database Server: dfcorp-oracle-db (Oracle DB)
+- Message Queue Server: dfcorp-queue (RabbitMQ)
