@@ -6,6 +6,11 @@
 * **Libraries:** `scikit-learn`, `pandas`, `numpy`, `matplotlib`, `seaborn`
 * **Setup:** Run `pip install -r requirements.txt` to install dependencies.
 
+* **DATA SETUP  :** 
+  Due to GitHub's file size limits and standard data engineering practices, the datasets are not included in this repository. To run the notebook, please download the data and place it in the root directory:
+  * **NSL-KDD:** Download `KDDTest+.csv` `KDDTrain+.csv` from [NSL-KDD](https://www.kaggle.com/datasets/hassan06/nslkdd).
+  * **UNSW-NB15:** Download the official dataset from [UNSW Canberra Cyber](https://research.unsw.edu.au/projects/unsw-nb15-dataset) or [Kaggle](https://www.kaggle.com/datasets/mrwellsdavid/unsw-nb15).
+
 ## PROJECT OVERVIEW
 This project applies Supervised Machine Learning algorithms (Logistic Regression, Decision Tree, and Random Forest) to build a robust Network Intrusion Detection System (IDS). By training on the standard **NSL-KDD dataset**, the system analyzes network traffic features to automatically classify connections as benign (`Normal`) or malicious (`DoS`, `Probe`, `R2L`, `U2R`). 
 
